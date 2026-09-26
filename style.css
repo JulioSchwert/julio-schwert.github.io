@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f5efe6;
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4e342e;
+  color: #f5efe6;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f5efe6;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 5px;
+  color: #d7ccc8;
+}
+
+nav {
+  background-color: #6d4c41;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #f5efe6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc80;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #fffaf3;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #4e342e;
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.foto {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.lista-cardapio {
+  list-style: none;
+}
+
+.lista-cardapio li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #d7ccc8;
+}
+
+.lista-cardapio li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #4e342e;
+  color: #f5efe6;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
