@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafeteria Aroma - O melhor café da cidade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <!-- ===== CABEÇALHO ===== -->
   <header>
-    <img src="img/logo.png" alt="Logo da Cafeteria Aroma" class="logo">
-    <h1>Cafeteria Aroma</h1>
-    <p class="slogan">O melhor café da cidade desde 2010</p>
+    <div class="header-conteudo">
+      <img src="img/logo.png" alt="Logo da Cafeteria Aroma" class="logo">
+      <div>
+        <h1>Cafeteria Aroma</h1>
+        <p class="slogan">O melhor café da cidade desde 2010</p>
+      </div>
+    </div>
   </header>
 
+  <!-- ===== MENU ===== -->
   <nav>
     <ul>
       <li><a href="#sobre">Sobre</a></li>
@@ -22,38 +28,145 @@
     </ul>
   </nav>
 
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
   <main>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <img src="img/xicara de café.jpg" alt="Xícara de café fumegante" class="foto">
-      <p>
-        A Cafeteria Aroma nasceu de um sonho simples: servir cafés especiais
-        em um ambiente acolhedor. Trabalhamos com grãos selecionados de
-        Minas Gerais e preparamos cada bebida com carinho.
-      </p>
+
+    <!-- ============ SOBRE ============ -->
+    <section id="sobre" class="secao-sobre">
+      <h2>☕ Sobre Nós</h2>
+
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p class="destaque">
+            Desde 2010, servimos cafés especiais em um ambiente acolhedor
+            no coração da cidade.
+          </p>
+
+          <p>
+            A <strong>Cafeteria Aroma</strong> nasceu de um sonho simples:
+            criar um espaço onde as pessoas pudessem desacelerar, saborear
+            um bom café e conversar sem pressa. Trabalhamos apenas com
+            <strong>grãos selecionados de Minas Gerais</strong>, torrados
+            artesanalmente e preparados com carinho por nossa equipe.
+          </p>
+
+          <p>
+            Cada bebida é feita na hora, com atenção aos detalhes — do
+            espresso encorpado ao cappuccino cremoso. Nossos bolos e
+            pães também são produzidos artesanalmente, todos os dias,
+            na nossa cozinha.
+          </p>
+        </div>
+
+        <img src="img/ambiente.jpg" alt="Ambiente interno da cafeteria" class="sobre-imagem">
+      </div>
+
+      <!-- Números / destaques -->
+      <div class="numeros">
+        <div class="numero-item">
+          <span class="numero">15</span>
+          <span class="numero-label">anos de história</span>
+        </div>
+        <div class="numero-item">
+          <span class="numero">40+</span>
+          <span class="numero-label">tipos de café</span>
+        </div>
+        <div class="numero-item">
+          <span class="numero">100%</span>
+          <span class="numero-label">grãos nacionais</span>
+        </div>
+        <div class="numero-item">
+          <span class="numero">♥</span>
+          <span class="numero-label">feito com amor</span>
+        </div>
+      </div>
     </section>
 
-    <section id="cardapio">
-      <h2>Nosso Cardápio</h2>
-      <img src="img/croissant.png" alt="Croissant" class="foto">
-      <ul class="lista-cardapio">
-        <li><strong>Espresso</strong> — R$ 6,00</li>
-        <li><strong>Cappuccino</strong> — R$ 12,00</li>
-        <li><strong>Latte</strong> — R$ 13,00</li>
-        <li><strong>Bolo de chocolate</strong> — R$ 10,00</li>
-        <li><strong>Croissant</strong> — R$ 9,00</li>
-      </ul>
+    <!-- ============ CARDÁPIO ============ -->
+    <section id="cardapio" class="secao-cardapio">
+      <h2>🍰 Nosso Cardápio</h2>
+
+      <!-- CAFÉS -->
+      <h3 class="categoria-titulo">Cafés</h3>
+      <div class="cardapio-grid">
+
+        <article class="card-item">
+          <img src="img/espresso.jpg" alt="Espresso">
+          <div class="card-info">
+            <h4>Espresso</h4>
+            <p class="descricao">Café concentrado e encorpado, feito na hora.</p>
+            <span class="preco">R$ 6,00</span>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <img src="img/cappuccino.jpg" alt="Cappuccino">
+          <div class="card-info">
+            <h4>Cappuccino</h4>
+            <p class="descricao">Espresso com leite vaporizado e espuma cremosa.</p>
+            <span class="preco">R$ 12,00</span>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <img src="img/latte.jpg" alt="Latte">
+          <div class="card-info">
+            <h4>Latte</h4>
+            <p class="descricao">Café suave com bastante leite vaporizado.</p>
+            <span class="preco">R$ 13,00</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- DOCES -->
+      <h3 class="categoria-titulo">Doces & Salgados</h3>
+      <div class="cardapio-grid">
+
+        <article class="card-item">
+          <img src="img/bolo.jpg" alt="Bolo de chocolate">
+          <div class="card-info">
+            <h4>Bolo de Chocolate</h4>
+            <p class="descricao">Fatia generosa com cobertura cremosa.</p>
+            <span class="preco">R$ 10,00</span>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <img src="img/croissant.jpg" alt="Croissant">
+          <div class="card-info">
+            <h4>Croissant</h4>
+            <p class="descricao">Massa folhada quentinha, feita no dia.</p>
+            <span class="preco">R$ 9,00</span>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <img src="img/bolo.jpg" alt="Cheesecake">
+          <div class="card-info">
+            <h4>Cheesecake</h4>
+            <p class="descricao">Fatia de cheesecake com calda de frutas vermelhas.</p>
+            <span class="preco">R$ 14,00</span>
+          </div>
+        </article>
+
+      </div>
     </section>
 
+    <!-- ============ CONTATO ============ -->
     <section id="contato">
-      <h2>Contato</h2>
-      <p>📍 Passo Fundo, 667 — Centro</p>
-      <p>📞 (11) 99999-0000</p>
-      <p>✉️ contato@cafeteriaaroma.com</p>
-      <p>🕐 Segunda a Sexta, das 8h às 20h</p>
+      <h2>📍 Contato</h2>
+      <div class="contato-grid">
+        <p><strong>Endereço:</strong> Rua das Flores, 123 — Centro</p>
+        <p><strong>Telefone:</strong> (11) 99999-0000</p>
+        <p><strong>E-mail:</strong> contato@cafeteriaaroma.com</p>
+        <p><strong>Horário:</strong> Seg. a Sáb., das 8h às 20h</p>
+      </div>
     </section>
+
   </main>
 
+  <!-- ===== RODAPÉ ===== -->
   <footer>
     <p>&copy; 2025 Cafeteria Aroma — Todos os direitos reservados.</p>
   </footer>
